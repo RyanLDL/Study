@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--  根据父容器定位
+              layout_alignParentLeft:左对齐
+              layout_alignParentRight:右对齐
+              layout_alignParentTop:顶部对齐
+              layout_alignParentBottom:底部对齐
+              layout_centerHorizontal:水品居中
+              layout_centerVertical:垂直居中
+              layout_centerInParent:中间位置
+              -->
+    <!--  根据兄弟组件定位
+               layout_toLeftOf：放置于参考组件左边
+               layout_toRightOf：右边
+               layout_above：上方
+               layout_below：下方
+               layout_alignTop：对齐参考组件上边界
+               layout_alignBottom：下边界
+               layout_alignLeft：左边界
+               layout_alignRight：右边界
+               -->
+    <!-- 通用属性：
+            margin：设置组件与父容器的边距
+                layout_margin:上下左右偏移
+                layout_marginInLeft:
+                layout_marginInRight:
+                layout_marginInTop:
+                layout_marginInBottom:
+           padding：组件内部元素边距-->
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="#ff0000"
+       />
+
+    <RelativeLayout
+        android:layout_marginLeft="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/r1"
+        android:background="#00ff00"
+        android:id="@+id/t2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:text="下一个"
+        android:onClick="next"/>
+
+
+
+</RelativeLayout>

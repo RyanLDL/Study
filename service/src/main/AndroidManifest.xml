@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.servise">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Study">
+        <service android:name=".MyService"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".MyService" />
+<!--
+             android:exported=""  true or false 代表是否能被其他应用隐式调用，默认值由service有无intent-filter决定，如果有微true，无为false
+            android:permission="" 权限声明
+            android:process="" 是否在单独进程运行
+            android:isolatedProcess="" 是否在特殊线程运行
+            android:enabled="" 是否可以被系统实例化
+
+-->
+    </application>
+
+</manifest>

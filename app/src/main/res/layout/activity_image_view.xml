@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageViewActivity"
+    android:orientation="vertical">
+    <!--src:设置图片资源
+        scaleType：设置图片缩放类型
+        maxHeight：最大高度
+        MaxWidth：最大宽度
+        adjustViewBounds：调整View的界限-->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img"
+        android:src="@drawable/img2"
+        android:scaleType="fitCenter"/>
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/mmexport1585814771607"-->
+<!--        android:maxHeight="100dp"-->
+<!--        android:maxWidth="100dp"/>-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:text="下一个"/>
+    <!-- scaleType:
+            fitstart:保持宽高比缩放，直到较长边与控件边长相等后，将图片放在控件左上角
+            fitcenter:默认值，同上，缩放后放在中间
+            fitend:同上，放在右下角
+            fitxy:对图像的横纵方向上进行独立缩放使图片完全适应控件，比例会发生变化
+            center:保持原图大小，溢出部分裁剪处理
+            centercrop:保持宽高比缩放，直至完全覆盖控件，可能出现图片显示不完整
+            centerinside:保持宽高比缩放，直至控件能完全显示图片
+            matrix:不改变原图大小，从控件左上角开始绘制原图，超过部分裁剪处理
+
+
+    -->
+</LinearLayout>

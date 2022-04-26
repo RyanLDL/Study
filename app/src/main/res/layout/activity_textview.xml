@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:text="你好"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:gravity="center"/><!--字号单位为sp，gravity为文字在控件中的位置-->
+
+<!--    带阴影的textview
+        shadowcolor：阴影颜色
+        shadowRadius阴影模糊的程度，设为0.1就变成了字体颜色，建议3.0
+        shadowDx:阴影在水平方向的偏移
+        shadowDx：阴影在垂直方向的偏移
+        -->
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/t2"
+        android:textSize="50sp"
+        android:text="你好"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:shadowColor="#FF0000"
+        android:shadowRadius="3.0"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"></TextView>
+    <!--跑马灯效果-->
+    <!-- singleLine：内容单行显示
+         focusable：是否可以获取焦点
+         focusableInTouchMode：用于控制视图在触摸模式下是否可以聚焦
+         ellipsize：在哪里可以省略文本
+         marqueeRepeatLimit：字幕动画重复次数
+         -->
+        <com.example.控件.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="你好你好你好你好你好你好你好你好"
+            android:textSize="50sp"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever">
+<!--            <requestFocus/>不用自定义TextView时可以这样自动获取焦点-->
+        </com.example.控件.MyTextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一个" />
+</LinearLayout>

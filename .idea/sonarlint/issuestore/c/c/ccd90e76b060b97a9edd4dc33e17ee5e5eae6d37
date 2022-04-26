@@ -1,0 +1,6 @@
+
+m
+java:S1450"RRemove the "btn" field and declare it as a local variable in the relevant methods.(ãÈ§üÿÿÿÿ
+C
+java:S1604"(Make this anonymous inner class a lambda(ƒø…Òÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Éâí‡

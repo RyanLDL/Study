@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    tools:context="com.example.布局.GridLayoutActivity">
+    <!--orientation:水平还是垂直
+        columnCount：行显示几个
+        rowCount：列显示几个-->
+    <!--子控件属性：
+        layout_column:显示在第几列
+        layout_columnSpan:横向跨几列
+        layout_columnWeight:横向剩余空间分配比例
+        layout_gravity:在网格中显示位置
+        layout_row:显示在第几行
+        layout_rowSpan:横跨几行
+        layout_rowWeight:纵向剩余空间分配比例
+        -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一个"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第二个"
+        android:layout_gravity="right"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三个"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第四个"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第五个"/>
+
+
+</GridLayout>

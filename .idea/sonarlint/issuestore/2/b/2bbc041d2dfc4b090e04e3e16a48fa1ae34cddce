@@ -1,0 +1,12 @@
+
+;
+java:S1659" Declare "b2" on a separate line.(ƒáøùÿÿÿÿ
+l
+java:S1450"QRemove the "b1" field and declare it as a local variable in the relevant methods.(ƒáøùÿÿÿÿ
+l
+java:S1450"QRemove the "b2" field and declare it as a local variable in the relevant methods.(ƒáøùÿÿÿÿ
+>
+java:S1604"(Make this anonymous inner class a lambda(¬İí¼
+C
+java:S1604"(Make this anonymous inner class a lambda(ç™úÆıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Éâí‡

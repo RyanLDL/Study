@@ -1,0 +1,8 @@
+
+k
+java:S1450"URemove the "button" field and declare it as a local variable in the relevant methods.(ÈòÉ¹
+@
+java:S1068"+Remove this unused "context" private field.(êİç
+C
+java:S1604"(Make this anonymous inner class a lambda(Êœüûÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Éâí‡

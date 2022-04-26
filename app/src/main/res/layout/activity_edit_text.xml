@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTextActivity"
+    android:orientation="vertical">
+    <!-- hint:输入提示
+         textColorHint：输入提示文字颜色
+         inputType：输入类型
+         drawableXxxx：在输入框指定方位添加图片
+         drawablePadding设置图片于输入内容间距
+         paddingXxxx：设置内容与边框间距
+         background：背景色
+         -->
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext"
+        android:hint="请输入"
+        android:textColorHint="#FF0000"
+        android:drawableLeft="@drawable/ic_1"
+        android:inputType="number"
+        android:drawablePadding="20dp"
+        android:padding="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:text="获取"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2"
+        android:text="下一个"/>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:divider="@drawable/img_1"
+    android:showDividers="middle"
+    android:dividerPadding="100dp">
+    <!--orientation：组件排列发送
+        gravity：子元素的对齐方式，可多个组合
+        layout_gravity：该组件在父元素的对齐方式
+        background：背景，图片或颜色
+        divider：分割线
+        showDividers：设置分割线的位置：none（无）、beginning（开始）、end（结束）、middle（每两个组件之间）
+        dividerPadding：分割线padding
+        layout_weight：等比例划分区域 在原有长度基础上增加剩余控件的几分之几  当出现match_parent时，所有剩余空间全部拥有-->
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#ff0000"
+        android:layout_weight="2"
+       />
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="#00ff00"/>
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#0000ff"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一个"
+        android:onClick="next"/>
+
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/> 也可用于分割线-->
+
+
+</LinearLayout>

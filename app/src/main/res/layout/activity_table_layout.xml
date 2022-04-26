@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:collapseColumns="0,4"
+    android:stretchColumns="1,2"
+    android:shrinkColumns="3"
+    tools:context="com.example.布局.TableLayoutActivity">
+    <!-- collapseColumns:设置被隐藏的列的序号，从0开始
+         stretchColums:设置允许被拉伸的列序号，从0开始
+         shrinkColums:设置允许被收缩的列序号，从0开始-->
+    <!--子控件属性：
+            layout_columns:显示在第几列
+            layout_span：横向跨几行
+            -->
+    <TableRow>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一个"
+            android:layout_column="2"
+            android:layout_span="2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第二个"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三个"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第四个"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第五个"/>
+
+    </TableRow>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三个"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第四个"/>
+</TableLayout>

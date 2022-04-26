@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- drawable:引用的位图
+          state_focused：是否获取焦点
+          state_pressed：是否被按下
+          state_enable：是否可用
+          state_selected：是否被选择，针对有滚轮的情况
+          state_checked：是否被勾选
+          state_checkable：可否被勾选，checkbox用
+          state_window_是否获得窗口焦点：
+          state_active：是否处于活动状态，slidingTab用
+          state_single：包含多个字控件时，是否只显示一个
+          state_first：包含多个子控件时，确定第一个子控件是否处于显示状态
+          state_middle：包含多个子控件时，确定中间一个子控件是否处于显示状态
+          state_last：包含多个字控件时，确定最后一个是狗处于显示状态
+          -->
+    <item android:drawable="@drawable/ic_1" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_2"/>
+</selector>
