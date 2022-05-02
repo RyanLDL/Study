@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 /*
 * 使用方法：
+*   创建dialog.xml
+* View dialod = getLayoutInflater.inflate(R.id.xxx)
 *   AlertDialog.Builder builder=new AlertDialog.Builder(this);构建Dialog
 *   setIcon：图标
 *   setTitle:标题

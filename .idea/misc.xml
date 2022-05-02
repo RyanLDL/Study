@@ -16,6 +16,7 @@
         <entry key="..\:/ASProject/Study/app/src/main/res/layout/activity_alert_dialog.xml" value="0.33" />
         <entry key="..\:/ASProject/Study/app/src/main/res/layout/activity_animation.xml" value="0.20208333333333334" />
         <entry key="..\:/ASProject/Study/app/src/main/res/layout/activity_button.xml" value="0.3619791666666667" />
+        <entry key="..\:/ASProject/Study/app/src/main/res/layout/activity_ceshi.xml" value="0.3179347826086957" />
         <entry key="..\:/ASProject/Study/app/src/main/res/layout/activity_constrain_layout.xml" value="0.3619791666666667" />
         <entry key="..\:/ASProject/Study/app/src/main/res/layout/activity_edit_text.xml" value="0.33" />
         <entry key="..\:/ASProject/Study/app/src/main/res/layout/activity_frame_layout.xml" value="0.3619791666666667" />
@@ -54,9 +55,14 @@
         <entry key="..\:/ASProject/Study/fragment/src/main/res/layout/fragment_info.xml" value="0.3619791666666667" />
         <entry key="..\:/ASProject/Study/fragment/src/main/res/layout/fragment_info2.xml" value="0.20208333333333334" />
         <entry key="..\:/ASProject/Study/fragment_viewpager/src/main/res/layout/activity_main.xml" value="0.34739583333333335" />
+        <entry key="..\:/ASProject/Study/io/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/ASProject/Study/io/src/main/res/layout/activity_main2.xml" value="0.3052536231884058" />
+        <entry key="..\:/ASProject/Study/io/src/main/res/layout/activity_main3.xml" value="0.3619791666666667" />
+        <entry key="..\:/ASProject/Study/io/src/main/res/layout/item.xml" value="0.33" />
         <entry key="..\:/ASProject/Study/multithreading/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
         <entry key="..\:/ASProject/Study/multithreading/src/main/res/layout/activity_main2.xml" value="0.3619791666666667" />
         <entry key="..\:/ASProject/Study/service/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/ASProject/Study/test/src/main/res/layout/activity_main.xml" value="0.32563405797101447" />
       </map>
     </option>
   </component>

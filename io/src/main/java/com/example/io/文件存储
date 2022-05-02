@@ -1,0 +1,16 @@
+assets和raw
+assets文件夹又称为原生文件夹，在程序打包是不会被压缩。使用AssetManager类实现对assets目录下的文件进行访问，通过调用getResources（）.个getssets（）
+获取AssetManager对象，调用其open（）方法可以得到一个
+      inputStream对象供用户使用，只允许读取不允许修改
+对于资源文件res/raw中的文件读取可以通过调用OpenRawResource（）方法实现，参数是要访问资源文件的ID，返回一个InputStream对象，智能读取，不能写入。
+将InputStream对象包装成InputStreamReader对象，就能将对象读出。
+
+内部文件的存取
+默认为私有文件；使用Context来获取或操作，例如Context.getFileDir（）
+默认位置：data/data/<当前包名>/files/
+方法：openFileInout（）：为读入二打开文件，openFileOutput（）：为写入二打开文件
+openFileInout（）
+openFileOutput（）；两个参数，第一个为文件名，第二个为模式：Context.MPDE_PRIVATE:默认操作模式，该文件私有，写入的数据能被覆盖        可以使用+号联合使用
+                                                    Cotext.MODE_APPEND：会检查文件是否存在，存在就追加内容，不存在就创建
+                                                    Cotext.MODE_WORLD_READABLE：当前文件能被其他应用读取
+                                                     Cotext.MODE_WORLD_WRITEABLE：读取文件能被其他应用写入

@@ -1,0 +1,25 @@
+SharedPreferences是一款轻量级数据存储机制，用于存储配置信息，例如账号密码等
+键值对---只支持Java基本类型，不支持自定义,不能条件查询
+默认地址：/data/data/<当前包名>/shared_perfs目录下的XML文件中，如过创建时没有命名，默认为当前Activity同名
+私有文件，其他程序不能访问
+数据存储在XML中的<map></map>标签
+读取数据：获取Sharedpreferences对象后调用getXXX（）方法， 访问数据不存在时返回none  可对getXXX指定默认值
+存储数据：一般只支持读取，存储和修改时，通过Editor对象实现。1、调用Context的getSharedPreferences（）获取SharedPreferences对象  2、调用SharedPreferences对象的editor（）方法Editor对象
+        3、调用Editor对象的方法修改数据、例如putXXX（）、clear（）-清除、remove（String key）清除某个键 4、调用Editor对象的commit（）方法提交事务
+方法：contains（String key）--->检查是否存在该文件--->key是文件名
+     getAll（）获取所有数据 getString（）、getInt（）....
+
+
+关于SharedPrerences的获取
+1、调用Cotext对象的getSharedPreerences（）---->可以被同一程序下的其他组件共享
+2调用Activity对象的getPreerences()---->只能被该Activity使用
+
+四种模式：
+Context.MPDE_PRIVATE:默认操作模式，该文件私有，写入的数据能被覆盖
+Cotext.MODE_APPEND：会检查文件是否存在，存在就追加内容，不存在就创建
+Cotext.MODE_WORLD_READABLE：当前文件能被其他应用读取
+Cotext.MODE_WORLD_WRITEABLE：读取文件能被其他应用写入
+
+关于数据的提交
+1、commit（）：没有返回值，同步提交
+2、apply（）：Boolean，异步提交

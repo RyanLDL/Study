@@ -8,11 +8,11 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Study"
 include ':app'
-include ':app:fragment'
 include ':fragment'
 include ':fragment_viewpager'
 include ':activity'
-include ':activity:servise'
 include ':service'
 include ':broadcast'
 include ':multithreading'
+include ':io'
+include ':test'

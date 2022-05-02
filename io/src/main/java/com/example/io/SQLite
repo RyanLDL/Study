@@ -1,0 +1,25 @@
+SQLite：轻量级数据库
+支持查询、更新、维护等
+API：SQLiteOpenHelper类、SQLiteDataBase类、Cursor类：前两者用于操作数据表中的数据（增删查改等），后者用于查询遍历----查询返回值不是具体的数据副本，而是数据集指针（Cursor对象）
+        moveToPosition(position):将指针移到某记录
+        moveToNext()：将指针一道下一条记录
+        moveToFirst/Last()：指针移动到开始/末尾
+        getColumnNames()：得到字段名
+        getColumnIndex()：按列获取ID
+        int getCount()：获取记录总数
+        isAfterLast()：指针是否在末尾
+        isBeforeFirst()：指针是否在首部
+        isFirdt()：指针是否是第一条记录
+        isLast()：指针是否是最后一条记录
+        requery()：重新查询
+
+
+        SQLiteOpenHelper类：对数据库进行创建、更新、操作的管理类，只要继承该类，就能操作数据库。需要重写构造方法onCreat（）和onUpgrade（）
+        SQLDatabase：直接操作数据库的类，调用SQLiteOpenHelper对象的getReadableDatabase（）/getWriteableDatabase（）方法可以得到读写数据库的SQLDatabase实例     封装了各种操作数据库的方法，操作完毕后，需要调用SQLDatabase实例 的close方法关闭
+
+存储位置：data/data/<当前包名>/database/    存储时，可以指定数据类型，不指定就自动转换类型
+        NULL:表示Null值
+        INTEGER：带符号的整型
+        REAL：浮点值
+        TEXT：文本字符串
+        BLOB：二进制对象

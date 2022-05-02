@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private MyService myService = null;
+     MyService myService = null;
     //        MainActivity与Service的桥梁
     private ServiceConnection connection = new ServiceConnection() {
         @Override
