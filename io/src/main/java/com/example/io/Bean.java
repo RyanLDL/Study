@@ -1,9 +1,17 @@
 package com.example.io;
 
 public class Bean {
-    String stuName;
-    int stuId;
-    String stuClass;
+    private int stuID;
+    private String stuName;
+    private String stuClass;
+
+    public int getStuID() {
+        return stuID;
+    }
+
+    public void setStuID(int stuID) {
+        this.stuID = stuID;
+    }
 
     public String getStuName() {
         return stuName;
@@ -11,14 +19,6 @@ public class Bean {
 
     public void setStuName(String stuName) {
         this.stuName = stuName;
-    }
-
-    public int getStuId() {
-        return stuId;
-    }
-
-    public void setStuId(int stuId) {
-        this.stuId = stuId;
     }
 
     public String getStuClass() {

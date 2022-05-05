@@ -1,12 +1,12 @@
 
+>
+java:S1604="(Make this anonymous inner class a lambda(ú“Úå
+z
+java:S1488"dImmediately return this expression instead of assigning it to the temporary variable "myViewHolder".(¬åÑ×
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·÷î¹ùÿÿÿÿ
 '
 java:S2176"Rename this class.(ÀÐ½6
 i
 java:S1450"SRemove the "view" field and declare it as a local variable in the relevant methods.(ØÊ»¶
 V	java:S125"<This block of commented-out lines of code should be removed.(¹·¼øùÿÿÿÿ
 V	java:S125'"<This block of commented-out lines of code should be removed.(ü‡Ã¸úÿÿÿÿ
->
-java:S1604="(Make this anonymous inner class a lambda(ú“Úå
-z
-java:S1488"dImmediately return this expression instead of assigning it to the temporary variable "myViewHolder".(¬åÑ×
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·÷î¹ùÿÿÿÿ
