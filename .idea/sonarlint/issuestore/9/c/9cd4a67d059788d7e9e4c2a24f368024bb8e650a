@@ -1,0 +1,29 @@
+
+d
+java:S1192("IDefine a constant instead of duplicating this literal "test.txt" 3 times.(Î£·½ýÿÿÿÿ
+>
+java:S1604#"(Make this anonymous inner class a lambda(¬Ýí¼
+C
+java:S1604;"(Make this anonymous inner class a lambda(ÓŠÊÃýÿÿÿÿ
+C
+java:S1604J"(Make this anonymous inner class a lambda(ç™úÆýÿÿÿÿ
+J
+java:S1604_"(Make this anonymous inner class a lambda(ðüŒÑþÿÿÿÿ8†à°œˆ0
+f
+java:S2095A"PUse try-with-resources or close this "OutputStreamWriter" in a "finally" clause.(¨Ëá
+d
+java:S2095("IUse try-with-resources or close this "InputStream" in a "finally" clause.(Î£·½ýÿÿÿÿ
+j
+java:S2095Q"OUse try-with-resources or close this "InputStreamReader" in a "finally" clause.(ŽÞñ‚þÿÿÿÿ
+a
+java:S2095,"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(€¶ž&
+c	java:S116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åáÌ‚
+U
+java:S1659"?Declare "b2" and all following declarations on a separate line.(¹¿Øº
+V
+java:S1659"@Declare "tv2" and all following declarations on a separate line.(¯Ñþ
+T
+java:S4719*"9Replace charset name argument with StandardCharsets.UTF_8(ã‰ûõþÿÿÿÿ
+>	java:S1086")Either remove or fill this block of code.(ï­£Ä
+>	java:S108D")Either remove or fill this block of code.(ï­£Ä
+>	java:S108Z")Either remove or fill this block of code.(ï­£Ä

@@ -1,0 +1,10 @@
+ViewModel :介于View （视图）与Model（数据模型）之间的桥梁  使视图与数据分离，也能保持通信
+生命周期特性：独立于配置变化
+使用：
+    1、新建ViewModel的子类MyViewModel
+    2、再activity中，通过MyViewModel viewModel = new ViewModelProvider(this, new ViewModelProvider.AndroidViewModelFactory(getApplication()))
+                                   .get(MyViewModel.class);获取viewModel对象
+
+注意：
+    1、不能传入Context，会导致内存泄露
+    2、如果要使用Context，请使用AndroidViewModel中的Application  ---新建AndroidViewModel子类而不是ViewModel子类

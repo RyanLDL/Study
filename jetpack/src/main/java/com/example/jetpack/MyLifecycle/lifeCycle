@@ -1,0 +1,25 @@
+用户生命周期管理
+1、使用LifeCycle解耦页面与组件
+2、使用LifeCycleService 解耦Service与组件
+3、使用ProcessLifeCycleOwner监听应用程序生命周期:针对整个应用程序的监听，与Activity的数量无关  Lifecycle.Event.ON_CREATE只会调用一次 Lifecycle.Event.ON_DESTROY永远不会被调用
+
+使用方法：
+1、解耦页面和组件
+    1、自定义组件继承父组件实现LifecycleObserver接口，在布局文件中使用自定义的组件
+    2、使用注解将方法绑定至Activity生命周期例如@OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+    3、在逻辑代码中添加生命周期的监听 getLifecycle().addObserver(chronometer);
+2、使用LifeCycleService 解耦Service与组件
+    1、添加lifecycle.extensions依赖
+    2、新建Service类继承至LifecycleService
+    3、新建一个观察者类(Observer)继承至LifecycleObserver类
+    4、在Service的构造方法里，新建Observer对象，再调用getLifecycle().addObserver(myObserver)设置监听;
+    5、服务执行的具体内容写在观察者类中
+
+3、使用ProcessLifeCycleOwner监听应用程序生命周期
+    1、新建MyApplication继承Application
+    2、再MyApplication中调用ProcessLifecycleOwner.get().getLifecycle()
+                                       .addObserver（）绑定观察者
+    3、新建观察者类实现LifecycleObserver接口，通过注解绑定生命周期；
+
+
+lifecycle优点：建立可感知生命周期的组件   组件再其内部管理自家的生命周期，从而降低模块耦合度   减低内存泄露的可能性  Activity、Fragment Service、Applecation都有支持。

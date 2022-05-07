@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Study">
         <activity
+            android:name=".MyContentProvider"
+            android:exported="false" />
+        <activity
             android:name=".MySQLiteDatabase"
             android:exported="false" />
         <activity

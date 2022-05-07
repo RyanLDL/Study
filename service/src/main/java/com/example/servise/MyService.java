@@ -26,7 +26,7 @@ import androidx.annotation.Nullable;
 
 
 /**
- * 前台服务级通知推送
+ * 前台服务及通知推送
  * startForeground（）和stopForeground（）
  */
 public class MyService extends Service {

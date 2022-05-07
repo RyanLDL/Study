@@ -1,0 +1,16 @@
+ContentProvider:用于程序键共享数据
+系统为所有ContentProvider建立了一个数据表Data Model，其中保存了系统和用户共享的所有数据集，每个ContentProvider都对外提供了一个公开的Uri来表示相应的数据集
+Uri类型：1、content：//PhonesList/phones表示全部通讯录
+        2、content：//PhonesList/phones/1值得是id为1的通讯录数据
+Uri组成：scheme、authority/host和path
+        scheme：对于CotentProvider，安卓规定scheme为：content：//
+        authority/host：授权者或主机名称，用于唯一标识一个CP。外部程序根据这个标识找到相应数据集。一般authority全部采用小写全称
+        path：要操作的数据路径
+使用时需要在清单文件注册
+
+步骤：
+    1、创建自己的数据存储，如数据库、文件等
+    2、创建类继承ContentProvider，在类中重写query（）、insert（）、update（）、delete（）、getType（）和onCreat（）方法
+    3、在清单文件中注册
+
+程序通过ContentResolver接口存取ContentProvider共享数据。在Activity中，调用getContentResolver（）得到当前ContentProvider实例对象。

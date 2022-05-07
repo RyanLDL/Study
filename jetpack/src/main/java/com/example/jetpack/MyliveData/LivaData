@@ -1,0 +1,17 @@
+LivaData与ViewModel关系：在ViewModel中的数据变化时通知页面  减少Handler的使用
+使用：
+    1、新建ViewModel子类MyViewModel
+    2、在MyViewModel中定义一个LiveData变量，并提供该变量的get方法
+    3、在数据发生改变时，通过viewModel.getCurrentSecond().observe(this, new Observer<Integer>() {
+                             @Override
+                             public void onChanged(Integer integer) {
+                                 textView.setText(String.valueOf(integer));
+                             }
+                         });通知界面改变
+优势：1、确保数据符合界面状态
+     2、不会发送内存泄露
+     3、不会因为Activity的停止而崩溃
+     4、不在需要手动处理生命周期
+     5、数据始终保持最新状态
+     6、适当的配置更改
+     7、共享资源

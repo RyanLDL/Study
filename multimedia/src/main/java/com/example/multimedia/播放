@@ -1,0 +1,17 @@
+MediaPlayer类：用于播放音视频文件，方法：播放，停止，暂停，重复等，文件可来自于RAW、本地文件系统、网络
+    状态：Idle（空闲）状态：使用new方法新建对象时或调用reset（）方法时
+         Initialized（已初始化状态）：调用setDataSource（）方法 Idle->Initialized     注意当MediaPlayer对象处于其他状态（非Idle状态）下，调用setDataSource时，会抛IllegalStateException异常
+         prepared/preparing状态（就绪/准备状态）：在播放之前MediaPlayer对象必须进入就绪状态在开始播放之前，MediaPlayer对象必须进入就绪状态。 有两种方法（同步和异步）可以使MediaPlayer对象进入就绪状态：
+                                              调用prepare()方 法（同步）,使该MediaPlayer对象进人Prepared状态并返回；或调用prepareAsync(）方 法（异步），使MediaPlayer对象进人Preparing状态并返回，
+                                              而内部的播放引擎会继续未 完成的准备工作。当同步版本返回时或异步版本的准备工作全部完成时，就会调用客户 端提供的OnPreparedListener.onPrepared（）监听方法。
+                                              可以调用MediaPlayer. setOnPreparedListener(android.media.MediaPlayer.OnPreparedListener)方法来注册 OnPreparedListener。 在不合适的状态下调用
+                                              prepare()和prepareAsync()方法会抛出IllegalStateException异常。当MediaPlayer对象处于Prepared状态的时候,可以调整音视频的属性，如音量、播放时 是否一直亮
+                                              屏、循环播放等。
+         Started状态（播放）：要开始播放时，必须调用start（）方法，当此方法成功返回时，MedoaPlayer对象处于started状态，可用isPlaying（）方法判断是否在started状态
+         paused（暂停）状态：调用pause（）方法可以暂停、停止播放，以及调整播放位置。此方法成功返回时，MedoaPlayer对象处于paused状态。Started和Paused的状态相互切换时异步的
+         Stopped（停止）状态：调用stop（）会停止播放，并且会让一个处于上述状态外加PlaybackCompleted状态的MediaPlayer对象进入Stopped状态。调用seekTo（）可以调整播放位置。该方法时异步的，也可在其他状态调用，如Prpared、Paused和
+                            PlaybackCpmpleted状态。可调用getCurrentPosition（）获取当前播放位置。
+
+         PlaybackCompleted（播放完成）状态：当播放到流的末尾，就完成播放进入PlayCompleted状态，如果调用了setLooping开启了循环，当结束时会重新进入Started状态。当调用start（）后，会再次进入Started状态。
+         Error（错误）状态
+         End（结束）状态：调用了release（）方法后，MediaPlayer对象就会进入End状态，当一个MediaPlayer对象不再使用时，应立即调用release（）方法释放资源。一旦进入End状态就不能再被使用。

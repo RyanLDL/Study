@@ -1,0 +1,17 @@
+
+E
+java:S1604"(Make this anonymous inner class a lambda(¬İí¼8²÷¿£†0
+J
+java:S1604."(Make this anonymous inner class a lambda(ç™úÆıÿÿÿÿ8³÷¿£†0
+J
+java:S16048"(Make this anonymous inner class a lambda(ÓŠÊÃıÿÿÿÿ8³÷¿£†0
+j	java:S116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙáÂ8º÷¿£†0
+\
+java:S1659"?Declare "b2" and all following declarations on a separate line.(úÑ¸ì8Ã÷¿£†0
+n
+java:S1450"QRemove the "b1" field and declare it as a local variable in the relevant methods.(úÑ¸ì8Ã÷¿£†0
+n
+java:S1450"QRemove the "b2" field and declare it as a local variable in the relevant methods.(úÑ¸ì8Ã÷¿£†0
+n
+java:S1450"QRemove the "b3" field and declare it as a local variable in the relevant methods.(úÑ¸ì8Ã÷¿£†0
+]	java:S125B"<This block of commented-out lines of code should be removed.(ÄÜÍğÿÿÿÿÿ8Ë÷¿£†0

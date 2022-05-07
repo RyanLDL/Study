@@ -1,0 +1,13 @@
+
+C
+java:S1604("(Make this anonymous inner class a lambda(Æ¸Âõıÿÿÿÿ
+>
+java:S1604."(Make this anonymous inner class a lambda(ÌµÄ
+C
+java:S16044"(Make this anonymous inner class a lambda(ş—†ôÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Éâí‡
+h	java:S116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜î„úÿÿÿÿ
+F
+java:S1172""+Remove this unused method parameter "view".(ĞÄÈÏûÿÿÿÿ
+F
+java:S1172?"+Remove this unused method parameter "view".(éµòŸüÿÿÿÿ
